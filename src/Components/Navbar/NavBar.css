@@ -30,7 +30,7 @@
 
 .nav-menu-options{
    position: absolute;
-   top: 2.5rem;
+   top: 100%;
    left:0;
    display: flex;
    border: 5px solid rgb(243, 245, 238);
