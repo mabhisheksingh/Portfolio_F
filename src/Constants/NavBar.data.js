@@ -7,7 +7,7 @@ export const NavBarData = [
     Description: "This is home button.",
     Role: "User",
     hidden: false,
-    href: "#",
+    href: "/",
     hasSubOptions: false,
   },
   {
@@ -16,7 +16,7 @@ export const NavBarData = [
     Description: "This is Info about this is Website",
     Role: "User",
     hidden: true,
-    href: "#",
+    href: "/about",
     hasSubOptions: false,
   },
   {
@@ -34,7 +34,7 @@ export const NavBarData = [
         Description: "This is subOptions1 about this is Website",
         Role: "Private",
         hidden: false,
-        href: "#",
+        href: "abc1",
         hasSubOptions: false,
       },
       {
@@ -43,7 +43,7 @@ export const NavBarData = [
         Description: "This is subOptions2 about this is Website",
         Role: "Private",
         hidden: false,
-        href: "#",
+        href: "abc",
         hasSubOptions: true,
       },
       {
@@ -52,7 +52,7 @@ export const NavBarData = [
         Description: "This is subOptions3 about this is Website",
         Role: "Private",
         hidden: false,
-        href: "#",
+        href: "/bcd",
         hasSubOptions: false,
       },
     ],
@@ -63,7 +63,7 @@ export const NavBarData = [
     Description: "This is Info about Admin this is Website",
     Role: "Admin",
     hidden: false,
-    href: "#",
+    href: "fg",
     hasSubOptions: false,
   },
   {

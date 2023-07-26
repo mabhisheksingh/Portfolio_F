@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import "./NavBar.css";
 import { NavBarData } from "../../Constants/NavBar.data";
 import { useSelector } from "react-redux";
-import { rolePriority } from "../../Constants/Contants";
+import { rolePriority } from "../../Constants/Constants";
+import NavBarDropDown from "./NavBarDropDown";
+import {TiArrowDownOutline} from "react-icons/ti"
+import { Link, NavLink } from "react-router-dom";
 
 export default function NavBar() {
   //* Use to get data from redux store
@@ -46,27 +49,8 @@ export default function NavBar() {
                   onMouseEnter={(e) => isDropDownOpen(e, menuItem.id)}
                   onMouseLeave={() => setDropDown(menuItem.id)}
                 >
-                  <a href={menuItem.href}>{menuItem.Name}</a>
-                  {dropDown.isOpen && dropDown.option === menuItem.id && (
-                    <ul className="nav-menu-options">
-                      {menuItem.subOptions
-                        ?.filter(
-                          (item) =>
-                            rolePriority[profile?.Role] <=
-                            rolePriority[item?.Role]
-                        )
-                        .map((subOption, subOptionIndex) => {
-                          return (
-                            <li
-                              className="nav-menu-options-item"
-                              key={subOption.id}
-                            >
-                              <a href={subOption.href}>{subOption.Name}</a>
-                            </li>
-                          );
-                        })}
-                    </ul>
-                  )}
+                  <p className= "nav-menu-item-link" >{menuItem.Name }{ <TiArrowDownOutline color="black"  visibility={dropDown.isOpen && menuItem.id === dropDown.option ? "visible" : "hidden" }  />}</p>
+                  {dropDown.isOpen && <NavBarDropDown dropDown={dropDown} menuItem={menuItem} profile={profile} />}
                 </li>
               );
             }
@@ -76,7 +60,7 @@ export default function NavBar() {
                 className="nav-menu-item"
                 hidden={menuItem.current}
               >
-                <a href={menuItem.href}>{menuItem.Name}</a>
+                <NavLink  className= "nav-menu-item-link" to={menuItem.href} >{menuItem.Name}</NavLink>
               </li>
             );
           })}

@@ -4,6 +4,9 @@ import './App.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { addUser } from './Store/Slices/UserSlice';
 import NavBar from './Components/Navbar/NavBar';
+import { Route, Routes } from 'react-router-dom';
+import PublicRoutes from './Components/Router/PublicRouter';
+
 
 
 function App() {
@@ -13,7 +16,6 @@ function App() {
   const data   = useSelector( state =>{
     return state.users
   } );
-
 
   console.log("data ", import.meta.env.VITE_SITE_NAME)
 
@@ -25,6 +27,8 @@ function App() {
   return (
     <>
     <NavBar/>
+    <PublicRoutes />
+    
     <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
