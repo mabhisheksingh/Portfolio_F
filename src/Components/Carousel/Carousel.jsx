@@ -5,6 +5,7 @@ import { useRef } from 'react';
 import Button from '../Button/Button';
 import { noOfCardInScreen } from '../../Utils/Utils';
 import { cardData as cardDataGame } from '../../Constants/CardData/Game';
+import PropTypes from 'prop-types';
 
 function Carousel({heading, cardDataItems,backgroundColor}) {
 
@@ -130,4 +131,15 @@ function Carousel({heading, cardDataItems,backgroundColor}) {
   )
 }
 
+
+Carousel.propTypes ={
+  backgroundColor: PropTypes.string,
+  heading: PropTypes.string,
+  cardDataItems: PropTypes.array
+
+}
+Carousel.defaultProps  ={
+  backgroundColor:'rgba(0,5,13,.8)',
+  heading: "this is default"
+}
 export default Carousel;
