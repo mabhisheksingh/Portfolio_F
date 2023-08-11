@@ -4,7 +4,7 @@ import { NavBarData } from "../../Constants/NavBar.data";
 import { useSelector } from "react-redux";
 import { rolePriority } from "../../Constants/Constants";
 import NavBarDropDown from "./NavBarDropDown";
-import {TiArrowDownOutline} from "react-icons/ti"
+import {TiArrowDownOutline,TiArrowDownThick} from "react-icons/ti"
 import { Link, NavLink } from "react-router-dom";
 
 export default function NavBar() {
@@ -49,7 +49,10 @@ export default function NavBar() {
                   onMouseEnter={(e) => isDropDownOpen(e, menuItem.id)}
                   onMouseLeave={() => setDropDown(menuItem.id)}
                 >
-                  <p className= "nav-menu-item-link" >{menuItem.Name }{ <TiArrowDownOutline color="black"  visibility={dropDown.isOpen && menuItem.id === dropDown.option ? "visible" : "hidden" }  />}</p>
+                  <p className= "nav-menu-item-link" >{menuItem.Name }
+                  {dropDown.isOpen && menuItem.id === dropDown.option ? <TiArrowDownThick color="black" /> 
+                  : <TiArrowDownOutline color="black" /> }
+                  </p>
                   {dropDown.isOpen && <NavBarDropDown dropDown={dropDown} menuItem={menuItem} profile={profile} />}
                 </li>
               );

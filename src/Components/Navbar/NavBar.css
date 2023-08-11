@@ -9,10 +9,11 @@
     height: 3rem;
     border-radius: var(--border-radius);
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
 }
 .nav-menu-item{
-    /* border: 1px solid #000; */
-    /* background-color: rgb(237, 250, 245);  */
     list-style-type: none;
     position: relative;
     width: fit-content;
@@ -24,11 +25,15 @@
 }
 
 .nav-menu-item-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: rgb(5, 0, 0);
 }
 .nav-menu-item:hover {
     background: rgb(240, 248, 248);
+    cursor: pointer;
   }
 
 

@@ -11,7 +11,11 @@ To run in dev env
 ```powershell
 npm run dev
 ``````
-
+### V1.0.3
+* New Carousel added as component
+### V1.0.2
+* Bug UI fix in nav bar.
+*  
 ### V1.0.1
 * Added one more package route dom v6 for routing.
 * Router V6 implemented for public access with centralized path all pth should be present in Router.data.js file and we are dynamically add all routes in our code.

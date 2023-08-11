@@ -1,5 +1,10 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+
+#root{
+  --border-radius:10px;
+}
+
+.card{
+  position: relative;
+  top: 20px;
 }
