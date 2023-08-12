@@ -4,6 +4,12 @@ import './App.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { addUser } from './Store/Slices/UserSlice';
 import NavBar from './Components/Navbar/NavBar';
+import { Route, Routes } from 'react-router-dom';
+import PublicRoutes from './Components/Router/PublicRouter';
+import Card from './Components/Card/Card';
+import navBarImg from './assets/MyNvbar.png'
+import Carousel from './Components/Carousel/Carousel';
+
 
 
 function App() {
@@ -14,8 +20,7 @@ function App() {
     return state.users
   } );
 
-
-  console.log("data ", import.meta.env.VITE_SITE_NAME)
+  console.log("Environment ", import.meta.env.VITE_SITE_NAME)
 
   const addNewUser = (payload)=>{
     console.log(payload)
@@ -24,7 +29,18 @@ function App() {
 
   return (
     <>
-    <NavBar/>
+    <NavBar />
+
+    <Carousel/>
+    
+    
+    {/* <Card  heading={"This is heading"} content={"This is content."} img={navBarImg} />
+    <Card  heading={"This is heading"} content={"This is content."} img={navBarImg} /> */}
+    {/* <Card/> */}
+    {/* <Card width={"80px"} height={"100px"}/> */}
+    {/* <Card/> */}
+    {/* <PublicRoutes /> */}
+    
     <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
