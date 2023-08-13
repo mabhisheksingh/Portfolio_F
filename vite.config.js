@@ -14,9 +14,16 @@ export default ({ mode }) => {
         remotes: {
           Game: env.VITE_MODULE_FEDERATION_GAME,
         },
-        shared: ['react','react-dom']
+        shared: ['react','react-dom'],
+
       })
     ],
+    preview:{
+      cors:{
+        origin:[env.VITE_MODULE_FEDERATION_GAME],
+        methods:['GET']
+      }
+    },
     build: {
       modulePreload: false,
       target: 'esnext',
