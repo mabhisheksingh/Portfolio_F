@@ -11,11 +11,14 @@ import navBarImg from './assets/MyNvbar.png'
 import Carousel from './Components/Carousel/Carousel';
 import { cardData } from './Constants/CardData/Game';
 
-import {Button} from 'Games/Button'
+
+import {Button} from 'Game/Button'
 
 
 
 function App() {
+
+  console.log("Button ",Button)
   const [count, setCount] = useState(0);
 
   const dispatch = useDispatch();
@@ -23,7 +26,8 @@ function App() {
     return state.users
   } );
 
-  // console.log("Environment ", import.meta.env.VITE_SITE_NAME)
+  console.log("Environment ", import.meta.env.VITE_SITE_NAME)
+  console.log("Environment ", import.meta.env)
 
   const addNewUser = (payload)=>{
     // console.log(payload)
