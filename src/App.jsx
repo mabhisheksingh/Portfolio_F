@@ -9,6 +9,9 @@ import PublicRoutes from './Components/Router/PublicRouter';
 import Card from './Components/Card/Card';
 import navBarImg from './assets/MyNvbar.png'
 import Carousel from './Components/Carousel/Carousel';
+import { cardData } from './Constants/CardData/Game';
+
+import {Button} from 'Games/Button'
 
 
 
@@ -20,28 +23,21 @@ function App() {
     return state.users
   } );
 
-  console.log("Environment ", import.meta.env.VITE_SITE_NAME)
+  // console.log("Environment ", import.meta.env.VITE_SITE_NAME)
 
   const addNewUser = (payload)=>{
-    console.log(payload)
+    // console.log(payload)
     dispatch( addUser(payload) )
   }
 
   return (
     <>
     <NavBar />
+    <PublicRoutes />
 
-    <Carousel/>
+    <Button/>
     
-    
-    {/* <Card  heading={"This is heading"} content={"This is content."} img={navBarImg} />
-    <Card  heading={"This is heading"} content={"This is content."} img={navBarImg} /> */}
-    {/* <Card/> */}
-    {/* <Card width={"80px"} height={"100px"}/> */}
-    {/* <Card/> */}
-    {/* <PublicRoutes /> */}
-    
-    <div className="card">
+    {/* <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
@@ -54,7 +50,7 @@ function App() {
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
-      </div>
+      </div> */}
 
      </>
   )

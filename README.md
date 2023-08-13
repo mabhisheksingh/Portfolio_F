@@ -11,6 +11,19 @@ To run in dev env
 ```powershell
 npm run dev
 ``````
+
+INFO to run project
+```json
+"scripts": {
+    "dev": "vite",
+    "prod": "vite --mode production",
+    "build": "vite build ",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview --port=5000 --strictPort",
+    "deploy": "npm run build && npm run preview"
+},
+
+```
 ### V1.0.3
 * New Carousel added as component
 ### V1.0.2

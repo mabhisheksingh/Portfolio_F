@@ -6,11 +6,15 @@
   "scripts": {
     "dev": "vite",
     "prod": "vite --mode production",
-    "build": "vite build",
+    "build_dev": "vite build",
+    "build": "vite build --mode production",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview --port=5000 --strictPort",
+    "deploy_dev": "npm run build_dev && npm run preview",
+    "deploy": "npm run build && npm run preview"
   },
   "dependencies": {
+    "@originjs/vite-plugin-federation": "^1.2.3",
     "@reduxjs/toolkit": "^1.9.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
