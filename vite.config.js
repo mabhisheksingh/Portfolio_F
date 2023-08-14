@@ -4,7 +4,7 @@ import federation from '@originjs/vite-plugin-federation'
 
 export default ({ mode }) => {
   // Load app-level env vars to node-level env vars.
-  const env = {...process.env, ...loadEnv(mode, process.cwd())};
+  const env = { ...loadEnv(mode, process.cwd())};
 
   return defineConfig({
 
@@ -14,16 +14,14 @@ export default ({ mode }) => {
         remotes: {
           Game: env.VITE_MODULE_FEDERATION_GAME,
         },
+        filename:"homeComponents.js",
+        exposes:{
+          "./Card": "./src/Components/Card/Card.jsx",
+          "./Carousel": "./src/Components/Carousel/Carousel.jsx",
+        },
         shared: ['react','react-dom'],
-
       })
     ],
-    preview:{
-      cors:{
-        origin:[env.VITE_MODULE_FEDERATION_GAME],
-        methods:['GET']
-      }
-    },
     build: {
       modulePreload: false,
       target: 'esnext',
@@ -33,24 +31,3 @@ export default ({ mode }) => {
     
   })
 }
-
-// https://vitejs.dev/config/
-// export default defineConfig({
-
-//   plugins: [react(),
-//     federation({
-//       name: 'Remote_Repo',
-//       remotes: {
-//         Game: env.VITE_MODULE_FEDERATION_GAME,
-//       },
-//       shared: ['react','react-dom']
-//     })
-//   ],
-//   build: {
-//     modulePreload: false,
-//     target: 'esnext',
-//     minify: false,
-//     cssCodeSplit: false
-//   }
-  
-// })

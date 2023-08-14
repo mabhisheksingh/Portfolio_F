@@ -21,6 +21,15 @@ export const NavBarData = [
   },
   {
     id: uuid(),
+    Name: "GAME",
+    Description: "This is GAME about this is Website",
+    Role: "User",
+    hidden: true,
+    href: "/game",
+    hasSubOptions: false,
+  },
+  {
+    id: uuid(),
     Name: "My Apps",
     Description: "This is My Apps in this Website",
     Role: "Private",
@@ -68,20 +77,20 @@ export const NavBarData = [
   },
   {
     id: uuid(),
-    Name: "My Apps2",
+    Name: "Game",
     Description: "This is My Apps in this Website",
     Role: "Private",
     hidden: false,
-    href: "#",
+    href: "/game",
     hasSubOptions: true,
     subOptions: [
       {
         id: uuid(),
-        Name: "subOptions11",
+        Name: "Game1",
         Description: "This is subOptions1 about this is Website",
         Role: "Private",
         hidden: false,
-        href: "#",
+        href: "/game1",
         hasSubOptions: false,
       },
       {

@@ -1,7 +1,6 @@
-
-
 #root{
   --border-radius:10px;
+  --navbar-height: 3.2rem;
 }
 
 .card{
