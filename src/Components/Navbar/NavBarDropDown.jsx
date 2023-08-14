@@ -1,5 +1,3 @@
-import { TiArrowDownOutline } from "react-icons/ti";
-import { rolePriority } from "../../Constants/Constants";
 import "./NavBarDropDown.css"
 import { Link } from "react-router-dom";
 

@@ -2,16 +2,16 @@
     --border-radius:10px
   }
 .nav-container{
-    background-color: rgb(251, 253, 255);
+    background-color: rgb(246, 247, 244);
     display: flex;
     width: 100%;
     justify-content: space-around;
-    height: 3rem;
-    border-radius: var(--border-radius);
+    height: var(--navbar-height);
+    /* border-radius: var(--border-radius); */
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: 9999;
+    z-index: 99999;
 }
 .nav-menu-item{
     list-style-type: none;
@@ -30,6 +30,7 @@
     align-items: center;
     text-decoration: none;
     color: rgb(5, 0, 0);
+    font-size: 1rem;
 }
 .nav-menu-item:hover {
     background: rgb(240, 248, 248);

@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { rolePriority } from "../../Constants/Constants";
 import NavBarDropDown from "./NavBarDropDown";
 import {TiArrowDownOutline,TiArrowDownThick} from "react-icons/ti"
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function NavBar() {
   //* Use to get data from redux store

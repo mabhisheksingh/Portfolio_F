@@ -1,37 +1,42 @@
-#root{
-    --left:10px;
-    --right:10px;
-    --top:10px;
-    --carousel-margin:2px;
-    --side-arrow-width : 60px;
+#root {
+    --left: 10px;
+    --right: 10px;
+    --top: 10px;
+    --carousel-margin: 2px;
+    --side-arrow-width: 60px;
 }
-.carousel{
+
+.carousel {
     /* outline: none; */
     margin: var(--carousel-margin);
     display: flex;
     position: relative;
     flex-direction: column;
-    top: var(--top);
-    /* border: 2px solid rgb(221, 221, 231); */
+    /* top: var(--top); */
+    /* border: 2px solid rgb(22, 22, 231); */
     border-radius: var(--border-radius);
-    background-color: rgba(0,5,13,.8);
+    /* background-color: rgba(250, 251, 253, 0.8); */
+    background-color: inherit;
     overflow: hidden;
 }
-.carousel-heading{
-    color: rgb(255,255,255);
-    padding: 10px 0 10px var(--side-arrow-width);
+
+.carousel-heading {
+    color: #ffff;
+    font-weight: 600;
+    padding: 10px 0 0px var(--side-arrow-width);
 }
-.carousel-container{
+
+.carousel-container {
     /* border: 1px solid blueviolet; */
     position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    height: 270px;
+    height: 250px;
 
 }
 
-.carousel-slider{
+.carousel-slider {
     /* border: 1px solid rgba(231, 234, 238, 0.5); */
     /* border-radius: var(--border-radius); */
     /* take parent conatiner width and if u add margin it overflow with parent width */
@@ -48,24 +53,26 @@
     justify-content: space-between;
     align-items: center;
     overflow-x: hidden;
-    gap: 1.5rem; 
+    gap: 1rem;
 }
 
-.carousel-button-container{
-    /* background-color: rgba(166, 175, 175, 0); */
+.carousel-button-container {
+    /* background-color: rgba(3, 223, 223, 0); */
     width: var(--side-arrow-width);
     height: 100%;
     position: relative;
     display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center; /* Vertically center */
+    justify-content: center;
+    /* Horizontally center */
+    align-items: center;
+    /* Vertically center */
     z-index: 10;
     border-top-right-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
     /* margin:20px 0 0 0; */
 }
 
-.carousel-button{
+.carousel-button {
     /* align-items: center; */
     /* background-color: rgb(206, 134, 253); */
     background: transparent;
@@ -79,21 +86,26 @@
     cursor: pointer;
     border-radius: var(--border-radius);
     transition: all .5s;
-    
-}
-.carousel-button:hover, .carousel-button-container:hover{
-    /* background-color: rgb(134, 18, 211); */
-    color: white;
-    border: none;
-    font-size: 2.5rem;;
-    
-    
+    color: #ffff;
+
 }
 
-.prev{
+.carousel-button:hover,
+.carousel-button-container:hover {
+    /* background-color: rgb(134, 18, 211); */
+    /* color: rgb(245, 18, 18); */
+    border: none;
+    font-size: 2.5rem;
+    ;
+
+
+}
+
+.prev {
     /* left:var(--left); */
 
 }
-.next{
+
+.next {
     /* right: var(--right); */
 }
