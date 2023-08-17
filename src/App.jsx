@@ -1,8 +1,8 @@
 // import'dotenv/config'
 import './App.css'
-import NavBar from './components/Navbar/NavBar';
 
 import PublicRoutes from './Utils/PublicRoutes';
+import NavBar from './components/Navbar/NavBar';
 
 
 
