@@ -1,4 +1,4 @@
-import Carousel from "../../components/Carousel/Carousel"
+import Carousel from "../../Components/Carousel/Carousel"
 import { cardData } from "../../Constants/CardData/Game"
 import './Home.css'
 function Home() {

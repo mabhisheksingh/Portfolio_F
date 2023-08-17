@@ -2,7 +2,7 @@
 import './App.css'
 
 import PublicRoutes from './Utils/PublicRoutes';
-import NavBar from './components/Navbar/NavBar';
+import NavBar from './Components/Navbar/NavBar';
 
 
 

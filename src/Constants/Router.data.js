@@ -1,5 +1,5 @@
 import About from "../pages/About/About";
-import NoPage from "../components/NotFoundPage/NotFound";
+import NoPage from "../Components/NotFoundPage/NotFound";
 import Game from "../pages/Game/Game";
 import Home from "../pages/Home/Home";
 import TicTacToe from "Game/TicTacToe";
