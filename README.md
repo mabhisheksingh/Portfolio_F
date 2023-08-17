@@ -25,6 +25,9 @@ INFO to run project
     "deploy": "npm run build && npm run preview"
 }
 ```
+### V1.0.5
+* Added brand new page page about-me
+
 ### V1.0.4
 * New Home Section added and New game section added
 * Also implemented Module federation in this version.

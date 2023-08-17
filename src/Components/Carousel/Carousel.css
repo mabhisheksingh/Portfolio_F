@@ -3,6 +3,7 @@
     --right: 10px;
     --top: 10px;
     --carousel-margin: 2px;
+    --carousel-height: 290px;
     --side-arrow-width: 60px;
 }
 
@@ -12,8 +13,9 @@
     display: flex;
     position: relative;
     flex-direction: column;
+    min-height: var(--carousel-height);
     /* top: var(--top); */
-    /* border: 2px solid rgb(22, 22, 231); */
+    border: 2px solid rgb(22, 22, 231);
     border-radius: var(--border-radius);
     /* background-color: rgba(250, 251, 253, 0.8); */
     background-color: inherit;

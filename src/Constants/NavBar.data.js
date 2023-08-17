@@ -16,7 +16,7 @@ export const NavBarData = [
     Description: "This is Info about this is Website",
     Role: "User",
     hidden: true,
-    href: "/about",
+    href: "/about-me",
     hasSubOptions: false,
   },
   {

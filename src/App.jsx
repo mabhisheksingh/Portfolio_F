@@ -11,12 +11,11 @@ import PublicRoutes from './Utils/PublicRoutes';
 
 function App() {
 
-  console.log("Home Environment ", import.meta.env)
+  // console.log("Home Environment ", import.meta.env)
   return (
     <>
     <NavBar />
     <PublicRoutes />
-
      </>
   )
 }

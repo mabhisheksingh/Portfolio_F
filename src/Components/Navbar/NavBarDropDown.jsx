@@ -13,7 +13,7 @@ function NavBarDropDown({ dropDown, menuItem, profile }) {
             ?.filter(
               (item) => rolePriority[profile?.Role] <= rolePriority[item?.Role]
             )
-            .map((subOption, subOptionIndex) => {
+            .map((subOption) => {
               return (
                 <li className="nav-menu-options-item" key={subOption.id}>
                   <Link className= "nav-menu-item-link" to={subOption.href}>{subOption.Name}</Link>
