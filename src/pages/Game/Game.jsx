@@ -1,9 +1,9 @@
 import {NavLink, Outlet } from "react-router-dom";
 import { cardData } from "../../Constants/CardData/Game";
 import { v4 as uuid } from "uuid";
-import "./GameLayout.css";
+import "./Game.css";
 
-function GameLayout() {
+function Game() {
   return (
     <>
       <div className="games-layout">
@@ -23,9 +23,8 @@ function GameLayout() {
           <Outlet key={uuid()} />
         </div>
       </div>
-      {/* <Carousel cardDataItems={cardData} heading={"This is game a section"}/> */}
     </>
   );
 }
 
-export default GameLayout;
+export default Game;

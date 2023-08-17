@@ -21,7 +21,7 @@ export const NavBarData = [
   },
   {
     id: uuid(),
-    Name: "GAME",
+    Name: "Game",
     Description: "This is GAME about this is Website",
     Role: "User",
     hidden: true,

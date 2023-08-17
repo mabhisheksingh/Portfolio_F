@@ -1,8 +1,7 @@
-import Carousel from "../../Components/Carousel/Carousel"
+import Carousel from "../../components/Carousel/Carousel"
 import { cardData } from "../../Constants/CardData/Game"
-import GameLayout from "../Game/GameLayout"
-import './HomeLayout.css'
-function HomeLayout() {
+import './Home.css'
+function Home() {
   return (
     <div className="home-layout"> 
     {/* <div>This is my home</div> */}
@@ -16,4 +15,4 @@ function HomeLayout() {
   )
 }
 
-export default HomeLayout
+export default Home

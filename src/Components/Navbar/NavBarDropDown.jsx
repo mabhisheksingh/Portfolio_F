@@ -16,7 +16,7 @@ function NavBarDropDown({ dropDown, menuItem, profile }) {
             .map((subOption) => {
               return (
                 <li className="nav-menu-options-item" key={subOption.id}>
-                  <Link className= "nav-menu-item-link" to={subOption.href}>{subOption.Name}</Link>
+                  <Link title={subOption.Description} className= "nav-menu-item-link" to={subOption.href}>{subOption.Name}</Link>
                 </li>
               );
             })}

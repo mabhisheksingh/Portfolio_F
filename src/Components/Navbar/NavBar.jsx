@@ -49,10 +49,10 @@ export default function NavBar() {
                   onMouseEnter={(e) => isDropDownOpen(e, menuItem.id)}
                   onMouseLeave={() => setDropDown(menuItem.id)}
                 >
-                  <p className= "nav-menu-item-link" >{menuItem.Name }
+                  <span title={menuItem.Description} className= "nav-menu-item-link" >{menuItem.Name }
                   {dropDown.isOpen && menuItem.id === dropDown.option ? <TiArrowDownThick color="black" /> 
                   : <TiArrowDownOutline color="black" /> }
-                  </p>
+                  </span>
                   {dropDown.isOpen && <NavBarDropDown dropDown={dropDown} menuItem={menuItem} profile={profile} />}
                 </li>
               );
@@ -63,7 +63,7 @@ export default function NavBar() {
                 className="nav-menu-item"
                 hidden={menuItem.current}
               >
-                <NavLink  className= "nav-menu-item-link" to={menuItem.href} >{menuItem.Name}</NavLink>
+                <NavLink title={menuItem.Description} className= "nav-menu-item-link" to={menuItem.href} >{menuItem.Name}</NavLink>
               </li>
             );
           })}

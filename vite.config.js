@@ -16,8 +16,8 @@ export default ({ mode }) => {
         },
         filename:"homeComponents.js",
         exposes:{
-          "./Card": "./src/Components/Card/Card.jsx",
-          "./Carousel": "./src/Components/Carousel/Carousel.jsx",
+          "./Card": "./src/components/Card/Card.jsx",
+          "./Carousel": "./src/components/Carousel/Carousel.jsx",
         },
         shared: ['react','react-dom'],
       })
