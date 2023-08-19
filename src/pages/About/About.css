@@ -4,7 +4,7 @@
 }
 .about-container {
    
-    background-color: #f7efef;
+    /* background-color: inherit; */
     /* height: calc(100% - var( --navbar-height)); */
     position: relative;
     width: 100%;
@@ -165,7 +165,7 @@
 .resume{
     position: relative;
     /* background-color: #d8ecee; */
-    background-color: white;
+    /* background-color: white; */
     /* border: 5px solid blue ; */
     display: flex;
     align-items: center;

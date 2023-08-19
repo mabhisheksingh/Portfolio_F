@@ -11,7 +11,7 @@ function About() {
   // console.log(projects)
 
   return (
-    <div className="about-container">
+    <div className="about-container bg-color-dark">
       <div className="about-sidebar-container">
         <div className="about-sidebar">
           <span className="facebook">
@@ -62,8 +62,8 @@ function About() {
         <div className="about-profile-right"></div>
       </div>
 
-      <div className="resume" id="bio">
-        <h1 style={{ color: "black" }}>Resume</h1>
+      <div className="resume bg-color-dark" id="bio">
+        <h1 className="text-white " >Resume</h1>
         <div className="resume-container">
           
           {/* Project part*/}
