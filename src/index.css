@@ -1,23 +1,44 @@
-*{
+body{
+  /* background-color: var(--background-color) */
+}
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* width: 1920px;
-  height: inherit; */
-  /* height: 100%; */
-  
-  /* background-color: rgb(255,255,255); */
-  
-  color: black;
+  color: white;
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  /* background-color: #fff; */
+  /* background-color: var(--background-color); */
 }
 
 :root {
-  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
-  /* line-height: 1.5;
-  font-weight: 400; */
-  background-color: rgb(255,255,255);
-  
+
+  /** Nar bar*/
+  --header-height: 64px;
+  --footer-height: 150px;
+
+  /** Border radius*/
+  --border-radius: 5px;
+}
+
+
+/**Border classes*/
+.border-1px {
+  border: 1px solid rgb(240, 21, 21);
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.radius-10 {
+  border-radius: calc(var(--border-radius) * 2)
+}
+
+
+/**margins */
+.margin-auto {
+  margin: auto;
 }

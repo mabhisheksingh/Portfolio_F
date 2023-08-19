@@ -35,7 +35,7 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className="nav-container">
+      <nav className="nav-container navbar-bg-color">
         {NavBarData &&
           NavBarData.filter(
             (item) => rolePriority[profile?.Role] <= rolePriority[item?.Role]

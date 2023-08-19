@@ -138,30 +138,6 @@
 }
 
 
-.about-container .about-contacts{
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height: 150px;
-    /* padding: 100px; */
-
-    /* border: 5px solid blue; */
-}
-.about-container .phone , .about-container  .Emails {
-    display: flex;
-    align-items: flex-start;
-    padding: 20px;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-
-.about-container  .copy-write{
-    padding: 20px;
-}
-
 /* Style the focused section */
 /* #focused-contact {
     padding: 50px;

@@ -1,0 +1,79 @@
+#root {
+
+
+    --dark-green-color: rgb(43, 110, 98);
+    --medium-yellow-color: rgb(251, 188, 95);
+    --dark-yellow-color: rgb(210, 125, 41);
+    --light-yellow-color: rgb(247, 220, 79);
+
+    --light-blue-url-color: rgb(20, 158, 202);
+    /** font weight */
+    --font-extra-bold: 900;
+    --font-bold: 700;
+    --font-primary: 400;
+
+    /** font size*/
+    /* --text-default: 0.875em; */
+    --text-default: 1;
+    --text-large: 1.875em;
+    --text-extra-large: 2.5em;
+
+    /** line-height: 1.25; */
+    --line-height-tight: 1.25em;
+    --line-height-large: 2.5em;
+    --line-height-medium: 1.625em;
+}
+
+/** text size classes */
+.text-xl {
+    font-size: var(--text-extra-large);
+}
+
+.text-lg {
+    font-size: var(--text-large);
+}
+
+.text-m {
+    font-size: var(--text-default);
+}
+
+/** font weight classes */
+.text-x-bold {
+    font-weight: var(--font-extra-bold);
+}
+
+.text-bold {
+    font-weight: var(--font-bold);
+}
+
+.text-default {
+    font-weight: var(--font-default);
+}
+
+/** text colors */
+
+.text-dark-green {
+    color: var(--dark-green-color)
+}
+
+.text-dark-yellow {
+    color: var(--dark-yellow-color)
+}
+
+.text-medium-yellow {
+    color: var(--medium-yellow-color)
+}
+
+.text-light-yellow {
+    color: var(--light-yellow-color)
+}
+
+.text-black {
+    color: black;
+}
+.text-white {
+    color: white;
+}
+.text-light-blue-url {
+    color: var(--light-blue-url-color)
+}

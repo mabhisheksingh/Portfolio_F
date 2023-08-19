@@ -1,0 +1,11 @@
+
+.home-layout{
+    position: relative;
+    max-width: 1280px;
+    min-width: 769px;
+    min-height: calc( 100vh  - var(--footer-height) - var(--header-height) );
+}
+
+.focus-visible\:outline-link { /**<div className='border-1px focus-visible:outline-link'><p className='margin-auto'>Abhishek Singh</p> </div>*/
+    outline: 1px solid green; /* Example outline style for links */
+}

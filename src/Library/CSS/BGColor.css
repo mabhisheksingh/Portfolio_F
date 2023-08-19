@@ -1,0 +1,55 @@
+#root {
+
+    /** Color */
+    --notification-bar-background-color: rgb(55, 65, 81);
+    --navbar-background-color: rgb(35, 39, 48);
+    --navbar-hover-background-color: rgb(45, 50, 59);
+    --search-bar-background-color: rgb(52, 59, 70);
+
+    --button-background-color-purple: rgb(87, 95, 183);
+    --button-background-color-light-skyblue: rgb(20, 158, 202);
+    --button-background-color-dark-skyblue: rgb(8, 126, 164);
+
+    --background-color-light-dark-green: rgb(37, 53, 58);
+
+    --background-color: rgb(35, 39, 47);
+}
+
+
+/** bg colors */
+.bg-color-dark {
+    background-color: var(--background-color);
+}
+
+.bg-color-light {
+    background-color: white;
+}
+
+.navbar-bg-color {
+    /* background-color: var(--notification-bar-background-color); */
+    background-color: var(--navbar-background-color);
+}
+
+.search-bg-color {
+    background-color: var(--search-bar-background-color);
+}
+
+.notification-bg-color {
+    background-color: var(--notification-bar-background-color);
+}
+
+.bg-color-light-dark-green {
+    background-color: var(--background-color-light-dark-green);
+}
+
+.bt-bg-color-purple {
+    background-color: var(--button-background-color-purple);
+}
+
+.bt-bg-color-light-skyblue {
+    background-color: var(--button-background-color-light-skyblue);
+}
+
+.bt-bg-color-dark-skyblue {
+    background-color: var(--button-background-color-dark-skyblue);
+}

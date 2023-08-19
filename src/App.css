@@ -1,9 +1,0 @@
-#root{
-  --border-radius:10px;
-  --navbar-height: 3.2rem;
-}
-
-.card{
-  position: relative;
-  top: 20px;
-}

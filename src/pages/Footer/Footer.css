@@ -1,0 +1,30 @@
+
+
+.about-contacts{
+    /* margin-top: 10px; */
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: var(--footer-height);
+    /* padding: 100px; */
+
+    /* border: 5px solid blue; */
+
+    /* position: relative; */
+    /* border: 2px solid green; */
+    width: 100%;
+    /* bottom: 0; */
+}
+.phone , .about-container  .Emails {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.copy-write{
+    padding: 20px;
+}

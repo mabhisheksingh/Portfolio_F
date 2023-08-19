@@ -9,8 +9,8 @@ function Card({width,height,heading, content , img,hoverClassName}) {
   return (
     <div className={'card-container '+ hoverClassName} style={{width,height}} >
         <div className="body">
-          <h5 className="heading">{heading}</h5>
-          <div className='heading-content'>{content}</div>
+          <h5 className="heading text-black">{heading}</h5>
+          <div className='heading-content text-black'>{content}</div>
         </div>
         <div className="img-container">
           <img alt='NOt found' src={img}/>

@@ -9,8 +9,8 @@
 
 .games-layout {
     position: relative;
-    background-color: #ffff;
-    height: calc(100vh - var(--navbar-height) - var(--border-width));
+    background-color: inherit;
+    height: calc(100vh - var(--header-height) - var(--footer-height) );
     width: 100%;
     /* border: var(--border-width) solid rgb(238, 228, 228); */
     display: flex;
@@ -25,21 +25,22 @@
     overflow-y: auto;
 }
 
-.games-heading .game {
+/* .games-heading .game {
     color: black;
-}
+} */
 
 .games-heading {
     font-size: 48px;
     line-height: 1;
     font-weight: 600;
+    background-color: inherit;
 
 }
 
 .games-heading-container {
     border-bottom: 1px solid white;
     padding: var(--padding);
-    background-color: #ffff;
+    background-color: inherit;
     /* border: 2px solid red; */
     /* position: relative; */
     position: -webkit-sticky; /* Safari */
@@ -49,7 +50,7 @@
 }
 
 .games {
-    font-size: 24px;
+    /* font-size: 24px; */
     /* padding: var(--padding); */
     position: relative;
     top: 0;
@@ -72,7 +73,7 @@
 }
 
 .game-window {
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     height: calc(100vh - var(--navbar-height) - var(--border-width));
     width: calc(100% - var(--game-option-width));
     max-width: calc(100% - var(--min-game-option-width));

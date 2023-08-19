@@ -77,7 +77,7 @@ export const  Carousel = ({ heading, cardDataItems, backgroundColor }) => {
         const tempContainerWidth =
           containerRef.current.getBoundingClientRect().width;
         setContainerWidth((prev) => tempContainerWidth);
-        console.log("Container Width:", tempContainerWidth);
+        // console.log("Container Width:", tempContainerWidth);
       }
     };
 
@@ -95,8 +95,8 @@ export const  Carousel = ({ heading, cardDataItems, backgroundColor }) => {
 
   return (
     // <div className="carousel" style={{ backgroundColor: backgroundColor }}>
-    <div className="carousel" >
-      <h3 className="carousel-heading">{heading}</h3>
+    <div className="carousel bg-color-light-dark-green" >
+      <h3 className="carousel-heading text-dark-green">{heading}</h3>
       <div className="carousel-container">
         <div className="carousel-button-container">
           {pageNo !== 1 && (

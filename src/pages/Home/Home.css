@@ -1,7 +1,7 @@
 #root{
     background-color: #0e0d0d;
 }
-.home-layout {
+.home {
     position: relative;
     height: calc(100vh - var(--navbar-height));
     width: 100%;

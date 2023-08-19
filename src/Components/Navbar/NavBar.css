@@ -2,11 +2,14 @@
     --border-radius:10px
   }
 .nav-container{
-    background-color: rgb(246, 247, 244);
+    
+
+    /* background-color: rgb(246, 247, 244); */
+    /* background-color: var(navbar-bg-color); */
     display: flex;
     width: 100%;
     justify-content: space-around;
-    height: var(--navbar-height);
+    height: var(--header-height);
     /* border-radius: var(--border-radius); */
     align-items: center;
     position: sticky;
@@ -29,12 +32,14 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: rgb(5, 0, 0);
+    color: white;
     font-size: 1rem;
 }
 .nav-menu-item:hover {
-    background: rgb(240, 248, 248);
+    /* background: rgb(240, 248, 248); */
+    background: var(--navbar-hover-background-color);
     cursor: pointer;
+    border-radius: 20px;
   }
 
 
