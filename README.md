@@ -25,6 +25,8 @@ INFO to run project
     "deploy": "npm run build && npm run preview"
 }
 ```
+### V1.0.7
+* Complete new css implemented.
 ### V1.0.6
 * Added Resume in about me
 ### V1.0.5
