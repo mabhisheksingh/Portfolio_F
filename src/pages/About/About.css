@@ -138,35 +138,10 @@
 }
 
 
-/* Style the focused section */
-/* #focused-contact {
-    padding: 50px;
-    background-color: #f9f9f9;
-    text-align: center;
-} */
-
-/* Smooth scrolling effect 
-:target {
-    animation: scrollHighlight 1s ease-in-out;
-}
-
-@keyframes scrollHighlight {
-    0% {
-        background-color: #ffcc00;
-    }
-    100% {
-        background-color: #f9f9f9; 
-    }
-} */
-
-
-
 /** Resume making */
 .resume{
     position: relative;
-    /* background-color: #d8ecee; */
-    /* background-color: white; */
-    /* border: 5px solid blue ; */
+    color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
