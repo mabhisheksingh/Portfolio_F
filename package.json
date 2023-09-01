@@ -7,7 +7,7 @@
     "dev": "vite --mode dev --port=5000 --strictPort",
     "prod": "vite --mode production",
     "build_dev": "vite build --mode dev",
-    "build": "vite build --mode production && cp _headers dist/",
+    "build": "vite build --mode production",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview --port=5000 --strictPort",
     "deploy_dev": "npm run build_dev && npm run preview",
