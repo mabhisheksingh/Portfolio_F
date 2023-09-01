@@ -43,47 +43,5 @@ export const cardData = [
     body: "This body 1",
     img: img1,
     path: "/game/tic-tac-toe",
-  },
-  {
-    id: uuid(),
-    heading: "Heading7",
-    body: "This body 1",
-    img: img1,
-    path: "/game/tic-tac-toe",
-  },
-  {
-    id: uuid(),
-    heading: "Heading8",
-    body: "This body 1",
-    img: img1,
-    path: "/game/tic-tac-toe",
-  },
-  {
-    id: uuid(),
-    heading: "Heading9",
-    body: "This body 1",
-    img: img1,
-    path: "/game/tic-tac-toe",
-  },
-  {
-    id: uuid(),
-    heading: "Heading10",
-    body: "This body 1",
-    img: img1,
-    path: "/game/tic-tac-toe",
-  },
-  {
-    id: uuid(),
-    heading: "Heading11",
-    body: "This body 1",
-    img: img1,
-    path: "/game/tic-tac-toe",
-  },
-  {
-    id: uuid(),
-    heading: "Heading12",
-    body: "This body 1",
-    img: img1,
-    path: "/game/tic-tac-toe",
-  },
+  }
 ];

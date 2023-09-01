@@ -3,12 +3,14 @@ import NoPage from "../Components/NotFoundPage/NotFound";
 import TicTacToe from "Game/TicTacToe";
 import { v4 as uuid } from "uuid";
 import GameLayout from "../Layouts/GameLayout/GameLayout";
-import {  useRoutes } from "react-router-dom";
+import { useRoutes } from "react-router-dom";
 import HomeLayout from "../Layouts/HomeLayout/HomeLayout";
 import Home from "../pages/Home/Home";
+import  { Suspense, lazy } from "react";
+
+const LazyTicTacToe = lazy(() => import("Game/TicTacToe"));
 
 export default function PublicRoutes() {
-  
   const PublicRouters = [
     {
       id: uuid(),
@@ -19,9 +21,8 @@ export default function PublicRoutes() {
           id: uuid(),
           element: <Home />,
           index: true,
-
         },
-      ]
+      ],
     },
     {
       id: uuid(),
@@ -31,18 +32,21 @@ export default function PublicRoutes() {
         {
           id: uuid(),
           path: "/game/tic-tac-toe",
-          element: <TicTacToe />,
+          element: (
+            <Suspense fallback={<div>...Loading</div>}>
+              <LazyTicTacToe />
+            </Suspense>
+          ),
           index: true,
         },
         {
           id: uuid(),
           path: "/game/tic-tac-toe1",
-          element: <TicTacToe />,
-        },
-        {
-          id: uuid(),
-          path: "/game/tic-tac-toe2",
-          element: <TicTacToe />,
+          element: (
+            <Suspense fallback={<div>...Loading</div>}>
+              <LazyTicTacToe />
+            </Suspense>
+          ),
         },
         {
           id: uuid(),

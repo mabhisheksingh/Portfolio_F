@@ -14,11 +14,12 @@ export default ({ mode }) => {
         remotes: {
           Game: env.VITE_MODULE_FEDERATION_GAME,
         },
-        filename:"homeComponents.js",
-        exposes:{
-          "./Card": "./src/Components/Card/Card.jsx",
-          "./Carousel": "./src/Components/Carousel/Carousel.jsx",
-        },
+
+        // filename:"homeComponents.js",
+        // exposes:{
+        //   "./Card": "./src/Components/Card/Card.jsx",
+        //   "./Carousel": "./src/Components/Carousel/Carousel.jsx",
+        // },
         shared: ['react','react-dom'],
       })
     ],

@@ -11,6 +11,11 @@ To run in dev env
 ```powershell
 npm run dev
 ``````
+CSS
+```css
+color: #646CFF;
+color: #9499FF;
+``````
 
 INFO to run project
 ```json
