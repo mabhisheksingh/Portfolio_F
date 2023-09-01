@@ -23,6 +23,14 @@ export default ({ mode }) => {
         shared: ['react','react-dom'],
       })
     ],
+    preview:{
+
+      //This is a security issue as of now we are allowing all https requests.
+      headers: {
+        "Access-Control-Allow-Origin": "*"
+      }
+
+    },
     build: {
       modulePreload: false,
       target: 'esnext',
