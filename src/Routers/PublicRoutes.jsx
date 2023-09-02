@@ -1,6 +1,5 @@
 import About from "../pages/About/About";
 import NoPage from "../Components/NotFoundPage/NotFound";
-import TicTacToe from "Game/TicTacToe";
 import { v4 as uuid } from "uuid";
 import GameLayout from "../Layouts/GameLayout/GameLayout";
 import { useRoutes } from "react-router-dom";
