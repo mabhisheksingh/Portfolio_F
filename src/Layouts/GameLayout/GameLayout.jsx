@@ -5,7 +5,7 @@ import "./GameLayout.css";
 import {GiHamburgerMenu } from 'react-icons/gi'
 import {RxCross1 } from 'react-icons/rx'
 import { useState } from "react";
-
+import LoadImages from "../../Utils/LoadImages";
 
 function Game() {
 
