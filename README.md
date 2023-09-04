@@ -30,6 +30,8 @@ INFO to run project
     "deploy": "npm run build && npm run preview"
 }
 ```
+### V1.0.8
+* New game added magic match1 here done changes for path and icons
 ### V1.0.7
 * Complete new css implemented.
 ### V1.0.6

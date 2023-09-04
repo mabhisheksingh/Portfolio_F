@@ -13,6 +13,7 @@
     height: calc(100vh - var(--header-height) - var(--footer-height) );
     min-height: 600px;
     width: 100%;
+    min-width: 700px;
     /* border: var(--border-width) solid rgb(238, 228, 228); */
     display: flex;
     flex-direction: row;

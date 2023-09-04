@@ -4,17 +4,17 @@ import img1 from "../../assets/Sign-50.jpg";
 export const cardData = [
   {
     id: uuid(),
-    heading: "Heading1",
+    heading: "TicTacToe",
     body: "This body 1",
     img: img1,
     path: "/game/tic-tac-toe",
   },
   {
     id: uuid(),
-    heading: "Heading2",
+    heading: "Magic Match1",
     body: "This body 2",
     img: img1,
-    path: "/game/tic-tac-toe2",
+    path: "/game/magic-match1",
   },
   {
     id: uuid(),

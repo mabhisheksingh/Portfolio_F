@@ -8,6 +8,7 @@ import Home from "../pages/Home/Home";
 import  { Suspense, lazy } from "react";
 
 const LazyTicTacToe = lazy(() => import("Game/TicTacToe"));
+const LazyMagicMatch1 = lazy(() => import("Game/MagicMatch1"));
 
 export default function PublicRoutes() {
   const PublicRouters = [
@@ -40,10 +41,10 @@ export default function PublicRoutes() {
         },
         {
           id: uuid(),
-          path: "/game/tic-tac-toe1",
+          path: "/game/magic-match1",
           element: (
             <Suspense fallback={<div>...Loading</div>}>
-              <LazyTicTacToe />
+              <LazyMagicMatch1 />
             </Suspense>
           ),
         },
